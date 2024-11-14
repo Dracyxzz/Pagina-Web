@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cómics y Más</title>
+  <meta name="description" content="Explora el mundo de Spider-Man y otros populares mangas con nuestras tarjetas descargables.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    body {
+      background-image: url('images/fondomanga.jpg');
+      background-size: cover; 
+      background-position: center; 
+      height: 100vh; 
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -1; 
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .card.custom-border {
+      position: relative;
+      border: 3px solid black;
+      color: blue;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card.custom-border:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center text-white mb-4">Biblioteca de Cómics</h1>
+    <div class="row">
+      <div class="col-12 col-md-4 mb-4">
+        <div class="card custom-border">
+          <img src="images/spiderman.jpg" class="card-img-top" alt="Superior Spider-Man comic cover" width="250px">
+          <div class="card-body">
+            <h5 class="card-title">Superior Spider-Man</h5>
+            <p class="card-text">Marvel Cómics</p>
+            <a href="https://cbrcomicsweb.top/2019/07/the-superior-spider-man-volumen-1" class="btn btn-primary">Descargar</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-12 col-md-4 mb-4">
+        <div class="card custom-border">
+          <img src="images/86.jpg" class="card-img-top" alt="Eighty-Six comic cover" width="250px">
+          <div class="card-body">
+            <h5 class="card-title">Eighty-Six</h5>
+            <p class="card-text">Asato Asato</p>
+            <a href="https://example.com/eighty-six" class="btn btn-primary">Descargar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 mb-4">
+        <div class="card custom-border">
+          <img src="images/tanya.jpg" class="card-img-top" alt="Youjo Senki comic cover" width="250px">
+          <div class="card-body">
+            <h5 class="card-title">Youjo Senki</h5>
+            <p class="card-text">Carlo Zen</p>
+            <a href="https://cbrcomicsweb.top/2019/07/the-superior-spider-man-volumen-1" class="btn btn-primary">Descargar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
